@@ -1,6 +1,16 @@
-<h1>Stupid Coaching</h1>
+<div class="container" style="max-width: 500px; margin: 2rem auto;">
+  <h1>Stupid Coaching</h1>
 
-<p><strong>Your question: </strong><%= @question %></p>
-<p><strong>Coach says: </strong><%= @answer %></p>
+  <div class="container" style="max-width: 500px; margin: 2rem auto; padding: 1rem; border-left: 8px solid #cccccc;">
+    <p><%= @question %></p>
+    <p><em>-You</em></p>
+  </div>
 
-<%= link_to "Ask a new question", ask_path %>
+  <div class="container bg-warning-light"
+      style="max-width: 500px; margin: 2rem auto; padding: 1rem; border-left: 8px solid #cccccc;">
+    <p><%= @answer %></p>
+    <p><em>-Coach</em></p>
+  </div>
+
+  <%= link_to "Ask a new question", ask_path %>
+</div>

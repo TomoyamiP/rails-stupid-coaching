@@ -1,4 +1,18 @@
-<form action="/answer" method="get" data-turbo="false">
-  <input type="text" name="question">
-  <input type="submit" value="Ask!">
-</form>
+<div class="container" style="max-width: 400px; margin: 2rem auto;">
+  <h1 class="text-center">Stupid Coaching</h1>
+  <p class="text-center mb-4">Ask me anything!</p>
+
+  <form action="/answer" method="get" data-turbo="false" class="d-flex w-100">
+    <input
+      class="form-control rounded-0"
+      type="text"
+      name="question"
+      style="border-right: none; flex-grow: 1;"
+    >
+    <input
+      type="submit"
+      class="btn btn-success rounded-0"
+      value="Ask!"
+    >
+  </form>
+</div>
